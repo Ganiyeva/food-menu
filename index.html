@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dishs</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="column-2">
+          <h1 class="page-title"> Majnuntol </h1>
+          <span class="date"> Tuesday, 2 Feb 2021 </span>
+          <div class="category-btns">
+            <button type="button" class="cat-btn"> Все </button>
+            <button type="button" class="cat-btn"> Первые Блюда </button>
+            <button type="button" class="cat-btn"> Вторые Блюда </button>
+            <button type="button" class="cat-btn"> Мангал </button>
+            <button type="button" class="cat-btn"> Холодные закуски </button>
+            <button type="button" class="cat-btn"> Салаты </button>
+          </div>
+        </div>
+
+        <div class="column-2">
+          <div class="input">
+            <i class="icon-search"></i>
+            <input type="text" placeholder="Search for food, coffe, etc.." id="search">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="title-select">
+        <h2 class="title"> Выбрать блюда </h2>
+        <div class="select">
+          <i class="icon-arrow-bottom"></i>
+          <select id="select">
+            <option value="Dine In">Пообедать в</option>
+          </select>
+        </div>
+      </div>
+      <div id="row2">
+      </div>
+    </div>
+
+    <div class="confirm-container">
+      <div class="row-2">
+        <div class="col-2">
+          <div class="border1">
+            <button class="left-arrow"> <i class=" fas fa-long-arrow-alt-left"></i> </button>
+            <h2 class="confirm-title"> Confirmation </h2>
+          </div>
+          <div id="col">
+          </div>
+          <div class="box2">
+            <p class="total-text"> Sub total </p>
+            <p id="total"></p>
+          </div>
+        </div>
+        <div class=" col-2">
+          <div class="border2">
+            <h2 class="confirm-title"> Payment </h2>
+            <p class="available"> 3 payment method available </p>
+          </div>
+          <h3 class="pay-title"> Payment Method </h3>
+          <button class="pay-cart">
+            <i class="fas fa-credit-card"></i>
+            <p class="btn-text"> Credit Card </p>
+          </button>
+          <button class="pay-cart">
+            <i class="fab fa-paypal"></i>
+            <p class="btn-text"> Paypal </p>
+          </button>
+          <button class="pay-cart">
+            <i class="fas fa-wallet"></i>
+            <p class="btn-text"> Paypal </p>
+          </button>
+          <label for="name" class="lable"> Cardholder Name </label>
+          <input type="text" placeholder="Levi Ackerman" name="name" class="big-input">
+          <label for="nums" class="lable"> Cardholder Name </label>
+          <input type="number" placeholder="2564 1421 0897 1244" name="nums" class="big-input">
+          <div class="d-flex">
+            <div class="int">
+              <label for="date" class="lable"> Expiration Date </label>
+              <input type="number" placeholder="02/2022" name="date" class="min-input">
+            </div>
+            <div class="int">
+              <label for="parol" class="lable"> CVV </label>
+              <input type="number" name="parol" class="min-input">
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="int">
+              <label for="type" class="lable"> Order Type </label>
+              <div class="select">
+                <i class="icon-arrow-bottom"></i>
+                <select id="select">
+                  <option value="Dine In">Dine In</option>
+                </select>
+              </div>
+            </div>
+            <div class="int">
+              <label for="table" class="lable"> Table no. </label>
+              <input type="number" placeholder="140" name="table" class="min-input">
+            </div>
+          </div>
+          <div class="d-flex">
+            <button class="cancel-btn"> Cancel </button>
+            <button class="conpay-btn"> Confirm Payment </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <button class="fixed-circle"> <span class="cart-count"></span> </button>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
